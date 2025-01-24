@@ -43,3 +43,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // 初始化渲染
     renderMessages();
 });
+
+import distributedObject from '@ohos.data.distributedObject';
+
+const config = {
+    bundleName: 'com.example.app',
+    abilityName: 'DistributedAbility',
+    objectId: 'myObjectId'
+};
+
+const distributedObj = distributedObject.createDistributedObject(config);
+
+async function updateData(key, value) {
+    try {
+        await distributedObj.set(key, value);
+        console.log(`Data for key "${key}" updated and synchronized across devices.`);
+    } catch (error) {
+        console.error('Failed to update data:', error);
+    }
+}
