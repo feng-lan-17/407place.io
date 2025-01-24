@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>407记忆小屋</title>
+    <link rel="stylesheet" href="word.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li id="xixi"><a href="index.html">首页</a></li>
+            <li id="xixi2"><a href="photo.html">照片</a></li>
+            <li id="xixi3"><a href="story.html">奇妙故事</a></li>
+            <li id="xixi4"><a href="words.html">名人名言</a></li>
+            <li id="xixi6"> <a href="liu.html">留言</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="quote-wall">
+    <!-- 预设的名言 -->
+    <div class="quote">
+        <p>“生命中有些距离，要用双脚去丈量。”</p>
+        <cite><a>—— 范教授</a></cite>
+        <button class="delete-quote">删除</button>
+    </div>
+    <div class="quote">
+        <p>“何学淞，你知道吗，我有了某位姜性女友”</p>
+        <cite><a>—— 高一同桌时期lmr常说</a></cite>
+        <button class="delete-quote">删除</button>
+    </div>
+</div>
+
+<div class="add-quote">
+    <h2>添加新的名言</h2>
+    <form id="quoteForm">
+        <label for="quoteText">名言：</label>
+        <textarea id="quoteText" name="quoteText" rows="4" required placeholder="输入名言..."></textarea>
+
+        <label for="author">作者：</label>
+        <input type="text" id="author" name="author" required placeholder="输入作者姓名...">
+
+        <label for="password">管理员密码：</label>
+        <input type="password" id="password" required placeholder="输入管理员密码...">
+
+        <button type="submit">添加名言</button>
+    </form>
+</div>
+</body>
+<script src="word.js"></script>
+</html>

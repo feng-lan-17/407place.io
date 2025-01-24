@@ -1,0 +1,195 @@
+/* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+/* 鼠标悬停效果 */
+nav ul li a:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+/* 活跃状态效果 */
+nav ul li a:active {
+    background-color: #28a745;
+}
+
+/* 动态下划线效果 */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover::after {
+    opacity: 1;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('钟齐志莽行书.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+.quote-wall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.quote {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote p {
+    font-size: 2.0em;
+    margin: 0 0 10px 0;
+    color: #555;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #777;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.quote button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.quote button:hover {
+    background-color: #d32f2f;
+}
+
+/* 添加名言表单样式 */
+.add-quote {
+    background: linear-gradient(135deg, #6c7d80, #979fa3);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.add-quote h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.add-quote label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #e0f7fa;
+}
+
+.add-quote input[type="text"],
+.add-quote textarea,
+.add-quote input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    background-color: #ecf0f1;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.add-quote button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.add-quote button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,218 @@
+header {
+    background-color: rgba(30, 29, 29, 0.78); /* 页眉的背景颜色 */
+    color: white; /* 文字颜色 */
+    padding: 10px 0; /* 上下内边距 */
+
+}
+
+header nav ul {
+    list-style: none; /* 去除列表的默认样式 */
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* 使列表项水平排列 */
+    margin-right: 10px; /* 列表项之间的间距 */
+}
+
+header nav ul li a {
+    color: white; /* 链接文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    padding: 5px 10px; /* 链接周围的内边距 */
+}
+
+header nav ul li a:hover {
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
+}
+li
+{ font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+    font-family: 'MyCustomFont', sans-serif;
+
+
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Qwigley-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+#xixi
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi2
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi3
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi4
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi6
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('钟齐志莽行书.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+/* 音乐播放区域的样式设置 */
+/* 音乐播放器区域 */
+.music-player-area {
+    width: 60%; /* 让播放器宽度适应屏幕 */
+    padding: 10px;
+
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    margin: 0 auto 20px; /* 顶部无外边距，底部有外边距 */
+    text-align: left;
+}
+
+audio {
+    width: 100%; /* 让音频控件宽度占满父元素 */
+    border-radius: 5px; /* 添加圆角 */
+
+}
+#a,#a1
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.story {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.story:hover {
+    transform: scale(1.02);
+}
+
+.story h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.story p.story-content {
+    line-height: 1.6;
+    font-size: 1em;
+    color: #555;
+    display: none; /* 默认隐藏故事内容 */
+}
+
+.add-story {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.add-story h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.add-story label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.add-story input[type="text"],
+.add-story textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.add-story button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-story button:hover {
+    background-color: #45a049;
+}
+
+button.delete-story {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+button.delete-story:hover {
+    background-color: #d32f2f;
+}
+
+button.toggle-story {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+button.toggle-story:hover {
+    background-color: #1976D2;
+}
+#passwordMessage {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

@@ -1,0 +1,145 @@
+header {
+    background-color: rgba(0, 0, 0, 0.73); /* 页眉的背景颜色 */
+    color: white; /* 文字颜色 */
+    padding: 10px 0; /* 上下内边距 */
+
+}
+
+header nav ul {
+    list-style: none; /* 去除列表的默认样式 */
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* 使列表项水平排列 */
+    margin-right: 10px; /* 列表项之间的间距 */
+}
+
+header nav ul li a {
+    color: white; /* 链接文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    padding: 5px 10px; /* 链接周围的内边距 */
+}
+
+header nav ul li a:hover {
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
+}
+li
+{ font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+    font-family: 'MyCustomFont', sans-serif;
+
+
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Qwigley-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+#xixi
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi2
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi3
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi4
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+#xixi6
+{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.71);
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('钟齐志莽行书.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+/* 图片切换器样式 */
+.image-slider {
+    position: relative;
+    max-width: 1000px; /* 适应不同屏幕 */
+    height: 700px; /* 根据图片比例自动调整高度 */
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-position: center center;
+}
+
+.slider-image {
+    position: relative ;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    opacity: 1;
+    display:block;
+    object-position: center center;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+.slider-image:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+}
+.slider-controls {
+    position: absolute;
+    width: 80%; /* 或者其他宽度，根据需要调整 */
+    top: 50%;
+    left: 50%; /* 添加水平居中 */
+    transform: translate(-50%, -50%); /* 水平和垂直居中 */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10; /* 确保按钮在图片上方 */
+}
+
+.slider-controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.slider-controls button:hover {
+    background-color: #555;
+}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .slider-controls button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留言栏</title>
+  <link rel="stylesheet" href="liu.css">
+</head>
+<header>
+  <nav>
+    <ul>
+      <li id="xixi"><a href="index.html">首页</a></li>
+      <li id="xixi2"><a href="photo.html">照片</a></li>
+      <li id="xixi3"><a href="story.html">奇妙故事</a></li>
+      <li id="xixi4"><a href="words.html">名人名言</a></li>
+
+      <li id="xixi6"> <a href="liu.html">留言</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<div class="container">
+  <h1>留言栏</h1>
+  <form id="guestbook-form">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="message">留言：</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <br><br>
+    <button type="submit">提交留言</button>
+  </form>
+  <div id="messages">
+    <h2>留言列表</h2>
+    <ul id="message-list"></ul>
+  </div>
+</div>
+<script src="liu.js"></script>
+</body>
+</html>

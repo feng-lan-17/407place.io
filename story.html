@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>407记忆小屋</title>
+    <link href="story.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li id="xixi"><a href="index.html">首页</a></li>
+            <li id="xixi2"><a href="photo.html">照片</a></li>
+            <li id="xixi3"><a href="story.html">奇妙故事</a></li>
+            <li id="xixi4"><a href="words.html">名人名言</a></li>
+
+            <li id="xixi6"> <a href="liu.html">留言</a></li>
+        </ul>
+    </nav>
+</header>
+<p id="a">在看故事前先打开一段悲伤的音乐</p>
+<div class="music-player-area">
+    <audio controls>
+        <source src="新录音.mp3" type="audio/mpeg">
+
+    </audio>
+
+</div>
+<p id="a1">当然了这首歌送给除了站主lmr之外的四个人</p>
+<section class="story-container">
+    <!-- 预设故事1 -->
+    <article class="story">
+        <h2>东父记</h2>
+        <p class="story-content">余旭东的父亲有天给宿舍来电话了，何学淞被派遣去接电话。
+        “喂，你是谁”
+        “我是余旭东爸爸”
+        何学淞十分诧异，十分自然的说出：“我才是余旭东爸爸”
+        ······end</p>
+        <button class="toggle-story">展示</button>
+        <button class="delete-story">删除</button>
+    </article>
+
+    <!-- 预设故事2 -->
+    <article class="story">
+        <h2>lmr和余的乒乓历险</h2>
+        <p class="story-content">余和lan高一喜欢打乒乓球，经常被抓，过着小偷一样的偷打乒乓球的日子。有一天放假，余旭东被Sophia留下来，
+        二人偷摸去打乒乓被抓，大事不妙被抓。周日果然即将被宰。lmr被教育一通而余被当众开除班籍，十分惨烈。</p>
+        <button class="toggle-story">展示</button>
+        <button class="delete-story">删除</button>
+    </article>
+
+    <!-- 用户添加的故事将动态显示在这里 -->
+</section>
+
+<!-- 用户输入区域 -->
+<section class="add-story">
+    <h2>添加我们的故事</h2>
+    <form id="storyForm">
+        <label for="storyTitle">故事标题：</label>
+        <input type="text" id="storyTitle" name="storyTitle" required>
+
+        <label for="storyContent">故事内容：</label>
+        <textarea id="storyContent" name="storyContent" rows="4" required></textarea>
+        <label for="password">管理员密码：</label>
+        <input type="password" id="password" required>
+        <span id="passwordMessage"></span>
+        <button type="submit">提交故事</button>
+    </form>
+</section>
+
+</body>
+<script src="story.js"></script>
+</html>
